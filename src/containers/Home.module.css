@@ -1,0 +1,123 @@
+.HomePage {
+    width: 84%;
+    margin: auto;
+}
+
+.HomePage form {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.HomeTextArea {
+    display: block;
+    margin: 1rem auto;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    line-height: 1.2rem;
+    padding-top: 7px;
+    width: 100%;
+}
+
+.WelcomePage h1 {
+    color: white;
+    font-size: 43px;
+    margin: 68px;
+    text-align: center;
+}
+
+.WelcomePage span {
+    color: #01b7ee;
+}
+
+.WelcomePage ul {
+    list-style-type: disc;
+    margin-left: 18px;
+    margin-bottom: 64px;
+    width: 84%;
+}
+
+.WelcomePage li {
+    color: white;
+    margin-bottom: 32px;
+}
+
+.WelcomePage p {
+    color: white;
+    text-align: center;
+}
+
+.WelcomePage a {
+    margin: 17px;
+    color: #d4fd02;
+}
+
+.Error {
+    color: red;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+@keyframes outline {
+    from {outline-offset: 0;}
+    to {outline-offset: 8px;}
+  }
+
+textarea:focus {
+    outline: 1.6px solid #01b7ee;
+    animation-name: outline;
+    animation-duration: .2s;
+    animation-direction: alternate;
+}
+
+.PostButton {
+    display: block;
+    margin-left: 2rem;
+    width: 100%;
+    background-color: #01b7ee;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.HomePage hr {
+    width: 11rem;
+    margin: 1.7rem auto;
+}
+
+.HomePage ul {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+@media (min-width: 650px) {
+    .HomePage {
+        width: 30rem;
+        margin: 4rem auto;
+        border: 2px solid #01b7ee;
+        padding: 90px;
+        padding-top: 41px;
+        padding: 41px 90px;
+    }
+    .WelcomePage {
+        width: 30rem;
+        margin: 4rem auto;
+        border: 2px solid #01b7ee;
+        padding: 90px;
+        padding-top: 41px;
+        padding: 41px 90px;
+    }
+    .WelcomePage h1 {
+        margin-top: 37px;
+    }
+    .HomePage ul {
+        padding: 0;
+    }
+    .HomeTextArea {
+        width: 20rem;
+    }
+    .PostButton {
+        width: 20rem;
+    }
+}

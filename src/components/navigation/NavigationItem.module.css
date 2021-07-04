@@ -1,0 +1,9 @@
+.NavItem a {
+    color: white;
+}
+
+@media (min-width: 650px) {
+    .NavItem {
+        margin-right: 4rem;
+    }
+}

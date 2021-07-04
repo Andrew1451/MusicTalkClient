@@ -1,0 +1,34 @@
+.Logo {
+    width: 110px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Logo a {
+    color: white;
+}
+
+.Accent {
+    color: #01b7ee;
+}
+
+@media (min-width: 650px) {
+    .Logo {
+        margin-top: 8px;
+        position: relative;
+        z-index: 100;
+    }
+}
+
+@media (min-width: 1260px) {
+    .Logo {
+        margin-left: 50px;
+    }
+}
+
