@@ -8,18 +8,18 @@ const NavigationList = props => {
 
     let navigation = (
         <ul className={classes.NavigationList} onClick={props.clicked}>
-            <NavigationItem link='https://music-talk.netlify.app/' exact>Home</NavigationItem>
-            <NavigationItem link='https://music-talk.netlify.app/sign-up' exact>SignUp</NavigationItem>
-            <NavigationItem link='https://music-talk.netlify.app/sign-in' exact>SignIn</NavigationItem>
+            <NavigationItem link='/' exact>Home</NavigationItem>
+            <NavigationItem link='/sign-up' exact>SignUp</NavigationItem>
+            <NavigationItem link='/sign-in' exact>SignIn</NavigationItem>
         </ul>
     );
     if (props.state.isLoggedIn) {
         navigation = (
             <ul className={classes.NavigationList} onClick={props.clicked}>
-                <NavigationItem link='https://music-talk.netlify.app/' exact>Home</NavigationItem>
-                <NavigationItem link='https://music-talk.netlify.app/profile' exact>Profile</NavigationItem>
-                <NavigationItem link='https://music-talk.netlify.app/friends' exact>Friends</NavigationItem>
-                <NavigationItem clicked={props.onLogout} link='https://music-talk.netlify.app/signout' exact>Signout</NavigationItem>
+                <NavigationItem link='/' exact>Home</NavigationItem>
+                <NavigationItem link='/profile' exact>Profile</NavigationItem>
+                <NavigationItem link='/friends' exact>Friends</NavigationItem>
+                <NavigationItem clicked={props.onLogout} link='/signout' exact>Signout</NavigationItem>
             </ul>
         )
     }
