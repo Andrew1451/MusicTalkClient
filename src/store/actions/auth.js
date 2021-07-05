@@ -73,7 +73,7 @@ export const signin = (username, password) => {
 export const signup = (username, password) => {
     return dispatch => {
         dispatch(signupStart());
-        axios.post('https://music-talk.herokuapp.com/sign-up', {
+        axios.post('/sign-up', {
             username: username,
             password: password
         }).then(res => {
