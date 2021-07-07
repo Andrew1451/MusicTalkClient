@@ -60,7 +60,6 @@ export const signin = (username, password) => {
         dispatch(signinStart());
         axios.post('https://music-talk.herokuapp.com/signin', {username, password})
         .then(res => {
-            console.log(res)
             if (res.data.err) {
                 dispatch(signinFail(res.data.err));
             }
@@ -69,7 +68,6 @@ export const signin = (username, password) => {
             }
         })
         .catch(err => {
-            console.log(err)
             dispatch(signinFail('wrong username or password :('))
         })
     }
